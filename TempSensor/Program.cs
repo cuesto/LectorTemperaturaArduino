@@ -9,19 +9,26 @@ namespace TempSensor
 {
     class Program
     {
+        private SerialPort _serialPort;
+
         static void Main(string[] args)
         {
+            Program prg = new Program();
+            prg._serialPort = new SerialPort("COM3");
+            prg.LeerPuertoCom();
+        }
 
-            SerialPort serial = new SerialPort("COM3");
+        private void LeerPuertoCom()
+        {
             String temp;
+            _serialPort.Open();
 
-            serial.Open();
             while (true)
             {
-                temp = serial.ReadLine().Replace("\r", "");
+                temp = _serialPort.ReadLine().Replace("\r", "");
                 Thread.Sleep(1000);
             }
-            serial.Close();
+            _serialPort.Close();
         }
     }
 }
