@@ -28,6 +28,7 @@ namespace TempSensor
             while (true)
             {
                 temp = _serialPort.ReadLine().Replace("\r", "");
+                EscribirBaseDatos(Convert.ToDecimal(temp));
                 Thread.Sleep(1000);
             }
             _serialPort.Close();
@@ -44,6 +45,14 @@ namespace TempSensor
 
             db.SensorTemperaturas.InsertOnSubmit(_st);
 
+            try
+            {
+                db.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                String err = ex.Message;
+            }
         }
     }
 }
