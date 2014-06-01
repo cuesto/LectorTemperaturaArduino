@@ -6,7 +6,7 @@ using System.IO.Ports;
 using System.Threading;
 
 
-/*Jonathan Cuesto*/
+/*Jonathan Cuesto - contribuyente*/
 
 
 namespace TempSensor
