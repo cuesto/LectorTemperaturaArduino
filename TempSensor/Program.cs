@@ -16,6 +16,7 @@ namespace TempSensor
         {
             Program prg = new Program();
             prg.db = new DBArduinoDataContext();
+            
             prg._serialPort = new SerialPort("COM3");
             prg.LeerPuertoCom();
         }
