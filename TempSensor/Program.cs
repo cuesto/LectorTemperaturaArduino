@@ -11,11 +11,14 @@ namespace TempSensor
     {
         static void Main(string[] args)
         {
+
             SerialPort serial = new SerialPort("COM3");
+            String temp;
+
             serial.Open();
             while (true)
             {
-                string temp = serial.ReadLine().Replace("\r", "");
+                temp = serial.ReadLine().Replace("\r", "");
                 Thread.Sleep(1000);
             }
             serial.Close();
