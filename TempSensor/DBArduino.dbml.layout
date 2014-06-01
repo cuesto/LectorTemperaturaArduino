@@ -1,1 +1,12 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBArduino">
+  <DataContextMoniker Name="/DBArduinoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7e311c08-a249-4afa-a1e5-09b3532a49e2" absoluteBounds="3.625, 1.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DBArduinoDataContext/SensorTemperatura" />
+      <nestedChildShapes>
+        <elementListCompartment Id="579dafbc-db19-40bb-8499-bbda29e607ab" absoluteBounds="3.64, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
