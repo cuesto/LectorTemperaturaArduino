@@ -12,6 +12,8 @@ namespace TempSensor
         {
             SerialPort serial = new SerialPort("COM3");
             serial.Open();
+
+            serial.Close();
         }
     }
 }
