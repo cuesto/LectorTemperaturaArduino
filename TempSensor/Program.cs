@@ -42,7 +42,7 @@ namespace TempSensor
                 Celsius = celsius
             };
 
-            
+            db.SensorTemperaturas.InsertOnSubmit(_st);
 
         }
     }
