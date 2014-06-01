@@ -12,7 +12,10 @@ namespace TempSensor
         {
             SerialPort serial = new SerialPort("COM3");
             serial.Open();
-            string temp = serial.ReadExisting();
+            while (true)
+            {
+                string temp = serial.ReadLine();
+            }
             serial.Close();
         }
     }
