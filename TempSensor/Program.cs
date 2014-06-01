@@ -5,6 +5,10 @@ using System.Text;
 using System.IO.Ports;
 using System.Threading;
 
+
+/*Jonathan Cuesto*/
+
+
 namespace TempSensor
 {
     class Program
