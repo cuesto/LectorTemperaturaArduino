@@ -15,7 +15,7 @@ namespace TempSensor
             serial.Open();
             while (true)
             {
-                string temp = serial.ReadLine();
+                string temp = serial.ReadLine().Replace("\r", "");
                 Thread.Sleep(1000);
             }
             serial.Close();
